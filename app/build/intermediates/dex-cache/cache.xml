@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="F:\Development\AndroidStudioProjects\ezraresezlife\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3-e8b5c2f9fb1a5487d8232941e88d9a9011f63188.jar"
+        jar="F:\Development\AndroidStudioProjects\ezraresezlife\universal-image-loader-1.9.3\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72"/>
+    <item
+        dex="F:\Development\AndroidStudioProjects\ezraresezlife\app\build\intermediates\pre-dexed\debug\fmp-22e639bc9cb3ff6f5060e6c090c0ea6c35a6d4f5.jar"
+        jar="F:\Development\AndroidStudioProjects\ezraresezlife\fmp\fmp.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="f6225cc05971bf0940a8db0bab12fa9439c3bce7"/>
+    <item
+        dex="F:\Development\AndroidStudioProjects\ezraresezlife\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.6-88d8cdaae1116f63ef086530ce1f7f31f378872b.jar"
+        jar="F:\Development\AndroidStudioProjects\ezraresezlife\android-async-http-1.4.6\android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52"/>
+
+</pre-dex-items>

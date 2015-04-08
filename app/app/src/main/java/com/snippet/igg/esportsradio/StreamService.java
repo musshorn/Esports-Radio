@@ -59,7 +59,7 @@ public class StreamService extends Service {
             game = intent.getStringExtra("Game");
             previewURL = intent.getStringExtra("PreviewURL");
             sendUpdate("Status", "Checking Server");
-            client.get("http://96.126.127.253:5000/?stream=" + stream, null, new JsonHttpResponseHandler() {
+            client.get("http://musshorn.me:5000/?stream=" + stream, null, new JsonHttpResponseHandler() {
                 @Override
                 public void onSuccess(int statusCode, Header[] headers, JSONObject response) {
                     try {
@@ -71,6 +71,8 @@ public class StreamService extends Service {
                             String url = response.getString("URL");
                             play(url);
                         }
+
+                        //Wait 10s if the server is streaming content
                         if (status.equals("Loading")) {
                             sendUpdate("Status", "Server Buffering");
                             final String url = response.getString("URL");
@@ -84,7 +86,6 @@ public class StreamService extends Service {
                         }
 
                     } catch (JSONException e) {
-                        Log.d("JSON", "99 problems and the JSON's just one.");
                         Log.d("JSON", e.toString());
                     }
 

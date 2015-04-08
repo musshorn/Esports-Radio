@@ -67,7 +67,6 @@ public class Main extends Activity   {
         super.onActivityResult(requestCode, resultCode, intent);
         if (resultCode == 1){
             String searchName = intent.getStringExtra("Game");
-            Log.d("Found it?", "got ere");
         }
     }
 

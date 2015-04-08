@@ -86,7 +86,6 @@ public class StreamList extends Activity {
                     }
 
                 } catch (JSONException e){
-                    Log.d("JSON", "99 problems and the JSON's just one.");
                     Log.d("JSON", e.toString());
                 }
                 Log.d("HTTP", "Http request complete");
