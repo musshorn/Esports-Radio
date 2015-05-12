@@ -8,7 +8,7 @@ import threading
 
 USHER_API = 'http://usher.twitch.tv/select/{channel}.json?nauthsig={sig}&nauth={token}&allow_source=true'
 TOKEN_API = 'http://api.twitch.tv/api/channels/{channel}/access_token'
-HOSTING_DOMAIN = 'http://musshorn.me/'  #Path where the m3u8 file and the TS files will be served from
+HOSTING_DOMAIN = 'http://musshorn.me/'  #Path where the m3u8 file and the TS files will be served from, assumed to be port 80
 active_games = set()
 
 def get_token_and_signature(channel):
@@ -51,4 +51,4 @@ class Server(object):
 
 cherrypy.config.update({'server.socket_host': '0.0.0.0'})
 cherrypy.config.update({'server.socket_port': int(os.environ.get('PORT', '5000'))})
-cherrypy.quickstart(HelloWorld())
+cherrypy.quickstart(Server())
